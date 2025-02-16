@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* body */
+body{
+    font-family:Open Sans
+}
+header, .section1{
+    padding:20px 80px;
+}
+:root{
+    --grey:  hsl(0, 0%, 75%);
+    --darkBlue: hsl(243, 87%, 12%);
+}
+
+/* header things */
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height:100px
+}
+header nav ul{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+    list-style-type:none;
+    font-family: "Raleway", serif;
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+    color:rgb(37, 37, 50);
+    transition:0.5s
+}
+header img, footer img{
+    width:120px
+}
+
+
+/* main */
+#section2-2{
+    gap:10px
+}
+main{
+    display:flex;
+    flex-direction:column;
+    gap:120px
+}
+section{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section1{
+    margin-top:20px;
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    gap:50px
+}
+#hero{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px
+}
+.image{
+    width:40%;
+    min-width:300px;
+}
+h1{
+    font-size: 35px;
+    /* width:75% */
+    line-height:1.4;
+    color:var(--darkBlue)
+}
+p{
+    line-height:1.5;
+    margin-top:15px
+}
+button{
+    background-color: rgb(47, 101, 249);
+    color:white;
+    box-shadow:0pc 0pc 10px black;
+    border-radius:5px;
+    border-style:none;
+    font-weight:700;
+    padding:10px 40px;
+    cursor:pointer;
+    transition:0.5s
+}
+button:hover{
+    background-color: hsl(170, 45%, 43%);
+}
+a:hover{
+    color: hsl(170, 45%, 43%)
+}
+#last{
+    width:250px
+}
+input{
+    width:90%;
+    min-width:370px;
+    height:40px;
+    padding-left:10px
+}
+#hero .search{
+    display:flex;
+    justify-content: space-between;
+    margin-top:20px
+}
+#hero button{
+    padding:10px 40px
+}
+#hero .text{
+    display:flex;
+    flex-direction: column;
+}
+
+.profile{
+    margin-top:20px;
+    display:flex;
+    /* justify-content: space-between; */
+    width:300px;
+    align-items: center;
+    gap:10px
+}
+.profile p{
+    font-weight:700
+}
+.profile span{
+    font-weight: 400;
+    font-size:12px
+}
+.profile img{
+    width:50px;
+    border-radius:50%;
+    height:50px
+}
+.information{
+    margin-top:50px;
+    min-width:350px;
+    /* height:300px; */
+    width:100%;
+    padding:50px;
+    box-shadow: 0px 0px 10px;
+    border-radius:10px
+}
+#section3{
+    background-color: rgb(87, 89, 136);
+    color:white;
+}
+#see{
+    width:200px;
+    background: none;
+    border-bottom-style:inset;
+    border-bottom-color: green;
+    box-shadow:0px 0px 0px;
+    color:green;
+    display:flex;
+    justify-content: space-evenly; 
+    transition:0.5s;
+    padding:3px 0px
+}
+#see:hover{
+    color:hsl(170, 45%, 43%);
+    border-bottom-color:hsl(170, 45%, 43%);
+}
+.text1{
+    width:50%;
+    padding:80px
+}
+footer{
+    /* height:200px; */
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    background-color: #07043b;
+    padding:80px;
+}
+footer a{
+    color:white;
+    margin-top:20px
+}
+.h{
+    display:flex;
+    justify-content: space-between;
+}
+.links{
+    display:flex;
+    flex-direction: column;
+}
+.inputs{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    margin-right:80px
+}
+footer a img{
+    width:20px;
+    
+}
+.icons{
+    font-size:30px;
+    color:white;
+    transition:0.5s
+}
+.icons:hover{
+    color:hsl(224, 93%, 58%);
+    cursor:pointer
+}
+/* media */
+@media(max-width:963px){
+    header, .section1{
+        padding:10px 20px
+    }
+    section{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    footer{
+        display:flex;
+        flex-wrap:wrap
+    }
+    .search{
+        display:flex;
+        flex-direction: column;
+        gap:20px;
+    }
+}
