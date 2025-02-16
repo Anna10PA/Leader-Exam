@@ -207,12 +207,12 @@ footer a img{
     width:20px;
     
 }
-.icons{
+i{
     font-size:30px;
     color:white;
     transition:0.5s
 }
-.icons:hover{
+i:hover{
     color:hsl(224, 93%, 58%);
     cursor:pointer
 }
